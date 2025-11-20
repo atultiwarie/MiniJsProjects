@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,html{
+    height: 100%;
+    width: 100%;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    background-color: #222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    width: 25rem;
+    height: 25rem;
+    background-color: #f2f2f2;
+    border-radius: 1rem;
+   
+}
+
+.card .img{
+    width: 100%;
+    overflow: hidden;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    position: relative;
+}
+
+.card #big-heart{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0) rotate(-60deg);
+    transition: all cubic-bezier(.65,1,.77,1.44) 0.4s;
+    font-size: 5rem;
+    background-image: url("https://t3.ftcdn.net/jpg/01/14/77/58/360_F_114775804_4yfG9qbKp1NlF1RLo4MUlGIVj9MWhnnc.jpg");
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#big-heart.active {
+    animation: instaHeart 0.8s ease-out forwards;
+}
+
+/* ❤️ Instagram animation */
+@keyframes instaHeart {
+    0% {
+        transform: translate(-50%, -50%) scale(0);
+        opacity: 0;
+    }
+    20% {
+        transform: translate(-50%, -50%) scale(1.3);
+        opacity: 1;
+    }
+    60% {
+        transform: translate(-50%, -90%) scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(-50%, -250%) scale(0.8);
+        opacity: 0;
+    }
+}
+
+
+img{
+    width: 100%;
+    object-fit: cover;  
+}
+
+.like{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    cursor: pointer;
+    user-select: none;
+    gap: 10px;
+    margin-top: 1rem;
+    
+}
+
+.icon .ri-heart-3-fill {
+    color: red;
+}
+
