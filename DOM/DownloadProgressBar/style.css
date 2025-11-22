@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,html{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background-color: #333;
+    color: #f2f2f2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.downloadContainer{
+    width: 30%;
+    background-color: #444;
+    border-radius: 10px;
+    padding: 20px;
+
+}
+.downloadContainer h2{
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.downloadContainer a{
+    text-decoration: none;
+    color: #4caf50;
+    font-weight: bold;
+}
+
+.progressBar{
+    width: 100%;
+    height: 30px;
+    background-color: #666;
+    border-radius: 50px;
+    overflow: hidden;
+    margin-top: 10px;
+    margin-bottom: 1.5rem;
+}
+
+
+.progress{
+    height: 100%;
+    width: 0%;
+    background-color: #4caf50;
+    transition: width 0.3s ease;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+#btn{
+    width: 100%;
+    padding: 1rem 1.5rem;
+    border-radius: 1rem;
+    margin-bottom: 1.5rem;
+    border: none;
+    background-color: #4caf50;
+    color: #f2f2f2;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+#btn:hover{
+    background-color: #166d1a;
+}
+
+#btn:active{
+    transform: scale(0.99);
+}
