@@ -1,14 +1,14 @@
 let allKeys= []
 let audio = new Audio('./tunes/tunes/a.wav');
 
-const pianoKeys = document.querySelectorAll('.piano .key');
+const pianoKeys = document.querySelectorAll('.piano-keys .key');
 
 function playTune(key){
      audio.pause();
      audio.currentTime = 0; 
     audio.src = `./tunes/tunes/${key}.wav`;
     audio.play();
-    const clickedKey = document.querySelector(`.piano .key[data-key="${key}"]`);
+    const clickedKey = document.querySelector(`.piano-keys .key[data-key="${key}"]`);
     clickedKey.classList.add('active');
     setTimeout(()=>{
         clickedKey.classList.remove('active');
