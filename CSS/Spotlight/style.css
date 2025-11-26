@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,html{
+    height: 100%;
+    width: 100%;
+    background-color: #222;
+}
+
+:root{
+    --x:400px;
+    --y:400px;
+}
+
+body{
+    background-image: url(https://i.pinimg.com/1200x/d4/1a/a4/d41aa4e110d18ca7f86191a200c50d2f.jpg);
+    background-size: contain;
+}
+
+.box{
+    height: 100%;
+    width: 100%;
+    background: radial-gradient( 150px at var(--x) var(--y), rgba(255, 255, 255, 0.073), rgba(0, 0, 0, 0.922) );
+}
+
